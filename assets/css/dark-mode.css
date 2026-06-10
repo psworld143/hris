@@ -1,0 +1,212 @@
+/* Dark Mode Styles and Transitions */
+
+/* Smooth transitions for all elements */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Form focus states for dark mode */
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Button hover effects */
+.dark .btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.dark .btn-secondary:hover {
+    background-color: #475569;
+}
+
+/* Table hover effects */
+.dark tbody tr:hover {
+    background-color: #334155;
+}
+
+/* Card hover effects */
+.dark .card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Status badges in dark mode */
+.dark .status-active {
+    background-color: #065f46;
+    color: #d1fae5;
+}
+
+.dark .status-inactive {
+    background-color: #92400e;
+    color: #fef3c7;
+}
+
+.dark .status-terminated {
+    background-color: #991b1b;
+    color: #fecaca;
+}
+
+/* Loading states */
+.dark .loading {
+    background-color: #334155;
+}
+
+.dark .loading::after {
+    border-color: #64748b;
+    border-top-color: #3b82f6;
+}
+
+/* Tooltip styles for dark mode */
+.dark .tooltip {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border: 1px solid #475569;
+}
+
+/* Modal backdrop for dark mode */
+.dark .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark .modal-content {
+    background-color: #1e293b;
+    border: 1px solid #475569;
+}
+
+/* Dropdown menus in dark mode */
+.dark .dropdown-menu {
+    background-color: #1e293b;
+    border: 1px solid #475569;
+}
+
+.dark .dropdown-item:hover {
+    background-color: #334155;
+}
+
+/* Pagination in dark mode */
+.dark .pagination .page-link {
+    background-color: #1e293b;
+    border-color: #475569;
+    color: #f1f5f9;
+}
+
+.dark .pagination .page-link:hover {
+    background-color: #334155;
+}
+
+.dark .pagination .page-item.active .page-link {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* Alert styles for dark mode */
+.dark .alert-success {
+    background-color: #065f46;
+    border-color: #047857;
+    color: #d1fae5;
+}
+
+.dark .alert-warning {
+    background-color: #92400e;
+    border-color: #b45309;
+    color: #fef3c7;
+}
+
+.dark .alert-danger {
+    background-color: #991b1b;
+    border-color: #dc2626;
+    color: #fecaca;
+}
+
+.dark .alert-info {
+    background-color: #1e40af;
+    border-color: #2563eb;
+    color: #dbeafe;
+}
+
+/* Progress bars in dark mode */
+.dark .progress {
+    background-color: #334155;
+}
+
+.dark .progress-bar {
+    background-color: #3b82f6;
+}
+
+/* Badge styles for dark mode */
+.dark .badge-primary {
+    background-color: #1e40af;
+    color: #dbeafe;
+}
+
+.dark .badge-success {
+    background-color: #065f46;
+    color: #d1fae5;
+}
+
+.dark .badge-warning {
+    background-color: #92400e;
+    color: #fef3c7;
+}
+
+.dark .badge-danger {
+    background-color: #991b1b;
+    color: #fecaca;
+}
+
+/* Custom focus ring for better accessibility */
+.dark .focus-ring {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Animation for dark mode toggle */
+.dark-mode-toggle {
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Icon color adjustments for dark mode */
+.dark .icon-light {
+    color: #f1f5f9;
+}
+
+.dark .icon-muted {
+    color: #94a3b8;
+}
+
+/* Text selection in dark mode */
+.dark ::selection {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+/* Print styles for dark mode */
+@media print {
+    .dark * {
+        background-color: white !important;
+        color: black !important;
+    }
+} 
